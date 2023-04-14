@@ -2,22 +2,22 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   namespace: token
-  name: tram-template-run-once-job
+  name: tram-update-tokens-into-sql-once-job
   labels:
-    app: tram-template-run-once-job
+    app: tram-update-tokens-into-sql-once-job
 
 spec:
   backoffLimit: 3
   template:
     metadata:
       labels:
-        app: tram-template-run-once-job
+        app: tram-update-tokens-into-sql-once-job
     spec:
       restartPolicy: OnFailure
       containers:
-        - name: tram-template-run-once-job
+        - name: tram-update-tokens-into-sql-once-job
           imagePullPolicy: Always
-          image: us-docker.pkg.dev/tram-dev-environment-global/tram-template-run-once-job/tram-template-run-once-job-snapshot-1.0:latest
+          image: us-docker.pkg.dev/tram-dev-environment-global/tram-update-tokens-into-sql-once-job/tram-update-tokens-into-sql-once-job-snapshot-1.0:latest
           resources:
             requests:
               memory: "0.5Gi"
@@ -27,7 +27,7 @@ spec:
               cpu: "1"
           env:
             - name: APP_NAME
-              value: tram-template-run-once-job
+              value: tram-update-tokens-into-sql-once-job
             - name: ENVIRONMENT
               value: TEST
             - name: LOG_LEVEL
