@@ -4,7 +4,9 @@ import { updateTokensInSQL } from './clients/TokenClient';
 
 async function cronLogic() {
   Logger.info('Starting updating tokens in sql once Job');
+
   await updateTokensInSQL();
+  
   Logger.info('Successfully finished updating tokens in sql once Job');
 }
 
