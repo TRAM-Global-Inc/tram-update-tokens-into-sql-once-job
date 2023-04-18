@@ -1,7 +1,7 @@
 {
-  "name": "tram-template-run-once-job",
+  "name": "tram-update-tokens-into-sql-once-job",
   "version": "1.0.0",
-  "description": "TRAM Template Run Once Job",
+  "description": "TRAM Update Tokens In SQL Once Job",
   "main": "dist/app.js",
   "scripts": {
     "build": "npx tsc",
@@ -16,19 +16,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tram-global-inc/tram-template-run-once-job.git"
+    "url": "git+https://github.com/tram-global-inc/tram-update-tokens-into-sql-once-job.git"
   },
   "keywords": [
     "TRAM",
     "Cronjob",
-    "Template"
+    "Update Tokens"
   ],
   "author": "Isaiah Moran",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tram-global-inc/tram-template-run-once-job/issues"
+    "url": "https://github.com/tram-global-inc/tram-update-tokens-into-sql-once-job/issues"
   },
-  "homepage": "https://github.com/tram-global-inc/tram-template-run-once-job#readme",
+  "homepage": "https://github.com/tram-global-inc/tram-update-tokens-into-sql-once-job#readme",
   "dependencies": {
     "@prisma/client": "^4.0.0",
     "@tram/tram-base-cron": "^1.0.0",
